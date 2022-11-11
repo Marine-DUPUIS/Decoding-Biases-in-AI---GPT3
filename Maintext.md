@@ -6,6 +6,12 @@ To what extend GPT-3 trained models reflect biased patterns ?
 ### **Introduction**
 <br>
 
+GPT-3 (Generative Pre-trained Transformer 3) is a language model, created by the OpenAI company since 2020. To understand what a language model is, one must first know the scientific field to which this concept belongs. refers to: natural language processing (NLP). This scientific field, at the confluence of artificial intelligence and linguistics, aims to process linguistic elements using computer tools (Powers & Turk, 1989).
+
+More precisely, the GPT-3 language model is based on pre-trained deep learning algorithms, and is able to generate entire texts, which tone and writing style are very natural and realistic. GPT-3 can also predict the end of a text that has already been started, with an advanced understanding of its writing context. Its algorithms are trained unsupervised on massive databases of human-written content like the Wikipedia website. As a result, we assume that GPT-3 algorithms incorporate into their learning process several biases present on the Internet.
+
+We will therefore explore in this study
+
 ### **Litterature review**
 <br>
 
