@@ -4,15 +4,15 @@ To what extend GPT-3 trained models reflect biased patterns ?
 
 <br>
 
-### *Introduction*
+### **Introduction**
 <br>
-### *Introduction*
+### **Introduction**
 <br>
-### *Introduction*
+### **Introduction**
 <br>
-### *Introduction*
+### **Introduction**
 <br>
-### *Introduction*
+### **Introduction**
 <br>
-### *Introduction*
+### **Introduction**
 <br> 
