@@ -4,15 +4,15 @@
 
 <br>
 
-### *Introduction
+### *Introduction*
 <br>
-### *Litterature review
+### *Litterature review*
 <br>
-### *Methodology
+### *Methodology*
 <br>
-### *Results 
+### *Results*
 <br>
-### * Concluding remarks
+### *Concluding remarks*
 <br>
-### *References
+### *References*
 <br> 
