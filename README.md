@@ -21,5 +21,5 @@
 ## **Overview of our documents** (to be completed)
 - READ.me : explanation of the project
 - Openai.ipynb : notebook used for analysis and evaluation
-- TBD
+- Maintext.md : written analysis, final document
 - TBD 
