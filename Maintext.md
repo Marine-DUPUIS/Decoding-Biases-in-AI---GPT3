@@ -1,18 +1,18 @@
 # **Decoding Biases in the GPT-3 Language Model**
 <br>
-### **To what extend GPT-3 trained models reflect biased patterns ?**
+To what extend GPT-3 trained models reflect biased patterns ?
 
 <br>
 
 ### *Introduction*
 <br>
-### *Litterature review*
+### *Introduction*
 <br>
-### *Methodology*
+### *Introduction*
 <br>
-### *Results*
+### *Introduction*
 <br>
-### *Concluding remarks*
+### *Introduction*
 <br>
-### *References*
+### *Introduction*
 <br> 
