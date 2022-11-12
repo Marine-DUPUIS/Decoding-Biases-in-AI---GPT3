@@ -20,6 +20,7 @@
 
 ## **Overview of our documents** (to be completed)
 - READ.me : explanation of the project
-- Openai.ipynb : notebook used for analysis and evaluation
 - Maintext.md : written analysis, final document
-- TBD 
+- sentiment analysis.csv : database of words studied
+- Sentiment analysis.ipynb : notebook used for the sentiment analysis of the database of words
+- Openai.ipynb : notebook for the use of the GPT-3 API
