@@ -22,5 +22,4 @@
 - READ.me : explanation of the project
 - Maintext.md : written analysis, final document
 - sentiment analysis.csv : database of words studied
-- Sentiment analysis.ipynb : notebook used for the sentiment analysis of the database of words
-- Openai.ipynb : notebook for the use of the GPT-3 API
+- Openai.ipynb : notebook for the sentiment analysis of the database of words, and the use of the GPT-3 API
