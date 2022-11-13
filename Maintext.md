@@ -17,7 +17,7 @@ Timsit (2017) emphasizes that English is an example of gender-neutral language, 
 
 During our sentiment analysis, we will rank adjectives according to their type (neutral, positive or negative) using the NLP tool Vader. Using the GPT-3 language model API (Open AI) using word embedding, we will try to see if women are more associated to the negative adjectives than men.
 
-<br> H1: Women are more associated with negative adjectives than men, men are more associated with positive adjectives. <br> H0: The gender has no influence on the association with positive or negative connation adjectives.
+<br> H0: Women are more associated with negative adjectives than men, men are more associated with positive adjectives. <br> H1: The gender has no influence on the association with positive or negative connation adjectives.
 
 If we do not manage to reject the null hypothesis, we can deduce that Open AI models are biased towards women: the training data of these algorithms associate more negative adjectives with women than with men.
 ### **Litterature review**
