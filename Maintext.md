@@ -6,16 +6,16 @@ To what extend GPT-3 trained models reflect biased patterns ?
 ### **Introduction**
 <br>
 
-<p align="justify"> GPT-3 (Generative Pre-trained Transformer 3) is a language model, created by the OpenAI company in 2020. To understand what a language model is, one must first know the scientific field to which this concept belongs. refers to: natural language processing (NLP). This scientific field, at the confluence of artificial intelligence and linguistics, aims to process linguistic elements using computer tools (Powers & Turk, 1989).
+<p align="justify"> GPT-3 (Generative Pre-trained Transformer 3) is a language model, created by the OpenAI company in 2020. To understand what a language model is, one must first know the scientific field to which this concept belongs : natural language processing (NLP). This scientific field, at the confluence of artificial intelligence and linguistics, aims to process linguistic elements using computer tools (Powers & Turk, 1989).
 
 More precisely, the GPT-3 language model is based on pre-trained deep learning algorithms, and is able to generate entire texts, which tone and writing style are very natural and realistic. GPT-3 can also predict the end of a text that has already been started, with an advanced understanding of its writing context. Its algorithms are trained unsupervised on massive databases of human-written content like the Wikipedia website. As a result, we assume that GPT-3 algorithms incorporate into their learning process several biases present on the Internet.
 
- As part of the NLP field, sentiment analysis is used to determine if a word is positive, negative or neutral. Using VADER (Valence Aware Dictionary and Sentiment Reasoner), an English-language sentiment analysis tool, we will be studying a database of adjectives determined randomly (n=1133) via the website : www.randomlists.com. Following the sentiment analysis, we will use the GPT-3 pre-trained model to see if the dataset reflects sexist biases. In other words, we will see if men are more associated positive words than women and the contrary, using word embeddings. :
+As part of the NLP field, sentiment analysis is used to determine if a word is positive, negative or neutral. Using VADER (Valence Aware Dictionary and Sentiment Reasoner), an English-language sentiment analysis tool, we will be studying a database of adjectives determined randomly (n=1133) via the website : www.randomlists.com. Following the sentiment analysis, we will use the GPT-3 pre-trained model to see if the dataset reflects sexist biases.  
 
 The database of adjectives can be download here : https://github.com/Marine-DUPUIS/Decoding-Biases-in-AI---GPT3, under the name "sentiment analysis.csv"
 Timsit (2017) emphasizes that English is an example of gender-neutral language, compared to other languages like French. If this assumption is not entirely true, given that English expresses gender with pronouns (he/she), there is however no gender forms linked to verbs, adjectives, and adverbs. Our choice to realise a sentiment analysis on *adjectives* is therefore interesting : any adjective used in English can be adapted to a man or a woman. 
 
-During our sentiment analysis, we will rank adjectives according to their type (neutral, positive or negative) using the NLP tool Vader. Using the GPT-3 language model API (Open AI), we will try to see if women are more associated to the negative adjectives than men.
+During our sentiment analysis, we will rank adjectives according to their type (neutral, positive or negative) using the NLP tool Vader. Using the GPT-3 language model API (Open AI) using word embedding, we will try to see if women are more associated to the negative adjectives than men.
 
 <br> H1: Women are more associated with negative adjectives than men, men are more associated with positive adjectives. <br> H0: The gender has no influence on the association with positive or negative connation adjectives.
 
