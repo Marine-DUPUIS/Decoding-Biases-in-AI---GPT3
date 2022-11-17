@@ -15,7 +15,7 @@ As part of the NLP field, sentiment analysis is used to determine if a word is p
 The database of adjectives can be download here : https://github.com/Marine-DUPUIS/Decoding-Biases-in-AI---GPT3, under the name "sentiment analysis.csv"
 Timsit (2017) emphasizes that English is an example of gender-neutral language, compared to other languages like French. If this assumption is not entirely true, given that English expresses gender with pronouns (he/she), there is however no gender forms linked to verbs, adjectives, and adverbs. Our choice to realise a sentiment analysis on *adjectives* is therefore interesting : any adjective used in English can be adapted to a man or a woman. 
 
-During our sentiment analysis, we will rank adjectives according to their type (neutral, positive or negative) using the NLP tool Vader. Using the GPT-3 language model API (Open AI) using word embedding, we will try to see if women are more associated to the negative adjectives than men.
+During our sentiment analysis, we will rank adjectives according to their type (neutral, positive or negative) via the NLP tool Vader. Using the GPT-3 language model API (Open AI) and focusing on word embeddings, we will try to see if women are more associated to the negative adjectives than men.
 
 <br> H0: Women are more associated with negative adjectives than men, men are more associated with positive adjectives. <br> H1: The gender has no influence on the association with positive or negative connation adjectives.
 
