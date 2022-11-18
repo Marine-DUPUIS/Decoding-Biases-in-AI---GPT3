@@ -46,4 +46,4 @@ If we do not manage to reject the null hypothesis, we can deduce that Open AI mo
 - Min, Z. & Juntao, L. (2021), A commentary of GPT-3 in MIT Technology Review 2021, Fundamental Research, 1, 6,831-833, https://doi.org/10.1016/j.fmre.2021.11.011. 
 - Troske, A. et al (2022). Brilliance Bias in GPT-3, Santa Clara University. https://scholarcommons.scu.edu/cgi/viewcontent.cgi?article=1220&context=cseng_senior 
 
-kkkkkk
+
