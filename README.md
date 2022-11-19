@@ -12,13 +12,8 @@
 - More information on word embeddings : https://beta.openai.com/docs/api-reference/introduction
 - Another useful article on word embedding : https://huggingface.co/blog/getting-started-with-embeddings
 
-## **Our project** (to be completed)
-### *Steps to follow*
-#### Step 1
-#### Step 2 
-#### Step 3 
 
-## **Overview of our documents** (to be completed)
+## **Overview of our documents**
 - READ.me : explanation of the project
 - Maintext.md : written analysis, final document
 - sentiment analysis.csv : database of words studied
