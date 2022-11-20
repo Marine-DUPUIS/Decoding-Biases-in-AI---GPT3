@@ -3,6 +3,9 @@
 To what extend GPT-3 trained models reflect biased patterns ?
 <br>
 
+!! things to do : write litterature review and complete the bibliography (Aissatou), find a way to rank adjectives according to their similairy score with the positive/negative adjectives of the database (Veronica), try new comparaisons (testing for racist, ableist biases) for example using words embeddings and add the new results in the part results  (everyone), try to do some data visualisation (Anna) >> some articles to help you if needed on data visualisation https://openai.com/blog/introducing-text-and-code-embeddings/; https://www.kdnuggets.com/2018/08/emotion-sentiment-analysis-practitioners-guide-nlp-5.html
+writing the conclusion (scope)
+
 ### **Introduction**
 <br>
 GPT-3 (Generative Pre-trained Transformer 3) is a language model, created by the OpenAI company in 2020. To understand what a language model is, one must first know the scientific field to which this concept belongs : natural language processing (NLP). At the confluence of artificial intelligence and linguistics, it aims to process linguistic elements using computer tools (Powers & Turk, 1989).
