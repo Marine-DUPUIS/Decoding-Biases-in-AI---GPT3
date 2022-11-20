@@ -32,7 +32,34 @@ One of the hypotheses tested will be the following:
 If we do not manage to reject the null hypothesis, we can deduce that Open AI models are biased towards women: the training data of these algorithms associate more negative adjectives with women than with men. Other categories of people will be compared to specific adjectives of the database.
 
 ### **Results**
-<br>
+
+*First step : the sentiment analysis*
+
+The studied adjectives are classified by a sentiment analysis tool, their polarity scores are then integrated into a new column of the databse. We then create sub-databases, bringing together all the adjectives classified as negative, positive, and neutral together.
+We observe an overrepresentation of neutral adjectives, while the number of negative and postive adjectives is quite similar.
+
+![image](https://user-images.githubusercontent.com/74886618/202903862-506e27dd-afaa-4673-9724-5b16b9c8eeb9.png)
+
+![image](https://user-images.githubusercontent.com/74886618/202904774-e20fb335-32f1-4fb3-ba70-218e01c2a51a.png)
+
+*GPT-3 embeddings and calculation of semantic proximity*
+
+Providing embeddings for the word "dizzy", "man", "woman", we will see which word is closer to the other in vector space, and is therefore considered semantically closer by GPT-3.
+
+The first adjective of our dataset is "dizzy". It refers to the state of someone feeling unsteady or confused (Oxford, 2022). It has been classified as a negative word by the sentiment analysis tool VADER. We will now test the similarity between this adjective and these words : "man" and "woman".
+ Text similarity models are used to "provide embeddings that capture the semantic similarity of pieces of text" (Open AI, 2022). For that, we will use one of the GPT-3 text similarity models called *Davinci*, for its performances and rapidity of calculation. 
+
+![image](https://user-images.githubusercontent.com/74886618/202904176-589ee054-18c6-424f-a481-bc28d1d4c5e6.png)
+
+The similarity score associated with the word "dizzy" is higher for "woman" compared to "man". Therefore, we can see that women are more associated than men with this negative word. We explained in the introduction that the GPT-3 language model is trained on several sources, with data scraped from sources like the BBC, NYT, Wikipedia, Reddit... To explain the results on the word "dizzy", we can suppose for that there are more occurrences in training dataset of the GPT-3 language model, of situations of women feeling dizzy compared to men. This seems quite consistent with the sigmate and common prejudice that women are fragile and weak compared to men (UN, 2014): this word must be more often, in a biased way, associated with women than with men on the Internet. Mimicking its training data, the GPT-3 model therefore indiciates a higher similarity between a woman and being "dizzy", compared to a man.
+
+But it this also the case in the rest of the database? Are all positive adjectives more associated with men than women? To answer this question, we will test the semantic proximity between the entire database of positive-ranked adjectives created earlier (called "count"), and two external inputs : "man" and "woman". The question is therefore the following: which word between "man" and "woman" is the closest semantically to all the positive classified adjectives in our database ?
+
+![image](https://user-images.githubusercontent.com/74886618/202904324-0a475b3d-d58e-42da-a27a-b82ca4fbad06.png)
+
+Men are more associated to positive adjectives than women, the similarity score is higher for men.
+
+It therefore seems that the GPT-3 language model is reflecting certain gender biases. We will now test other categories, using word embeddings, to see if we can highlight other remaining biases in the algorithm.
 
 ### **Concluding remarks**
 <br>
