@@ -14,6 +14,8 @@ Applying a sentiment analysis to the database, we will rank adjectives according
 ### **Litterature review**
 <br>
 
+*what we need to speak about : what is NLP, GPT3, overview of biases of GPT3 proved by litterature, sentiment analysis and polarity (use for which puropose, why it is useful to stuty biases)etc...*
+
 ### **Methodology**
 
  a)  Timsit (2017) emphasizes that English is an example of gender-neutral language, compared to other languages like French. If this assumption is not entirely true, given that English expresses gender with pronouns (he/she), there is however no gender forms linked to verbs, adjectives, and adverbs. Realising a sentiment analysis on *adjectives* is therefore interesting : any adjective used in English can be adapted to a man or a woman.
