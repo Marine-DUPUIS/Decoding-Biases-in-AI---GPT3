@@ -26,7 +26,7 @@ d) Word embeddings correspond to the representation of vectors of a certain dist
   
 e) We will therefore run several semantic comparisons between adjectives of the database and external inputs corresponding to specific categories of people. It will reveal the existence or not of biases in the database.
 One of the hypotheses tested will be the following:
-•	H0: Women are more associated with negative adjectives than men, men are more associated with positive adjectives.
+•	H0: Women are more associated with negative adjectives than men, men are more associated with positive adjectives.<br>
 •	H1: The gender has no influence on the association with positive or negative connation adjectives.
 
 If we do not manage to reject the null hypothesis, we can deduce that Open AI models are biased towards women: the training data of these algorithms associate more negative adjectives with women than with men. Other categories of people will be compared to specific adjectives of the database.
