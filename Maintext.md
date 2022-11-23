@@ -31,7 +31,7 @@ c) Polarity refers to the overall feeling conveyed by a written element. As expl
 d) Word embeddings correspond to the representation of vectors of a certain distance between different words. The more two words are semantically close, the more their distance will be reduced in the vector space (Harris, 1954). Open AI's GPT-3 offers word embeddings model, allowing to compare the similarity of two words or sentences. We chose to use the Davinci engine, for its performances and rapidity of calculation of similarity scores between different words. The similarity score corresponds to the product of the two vectors representing each word, also called the "dot product" (Open AI, 2022). The higher the similarity score between two entries (on a scale ranging from -1 to 1), the higher their semantic proximity.
   
 e) We will therefore run several semantic comparisons between adjectives of the database and external inputs corresponding to specific categories of people. It will reveal the existence or not of biases in the database.
-One of the hypotheses tested will be the following:
+One of the hypotheses tested will be the following:<br>
 •	H0: Women are more associated with negative adjectives than men, men are more associated with positive adjectives.<br>
 •	H1: The gender has no influence on the association with positive or negative connation adjectives.
 
