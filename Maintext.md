@@ -18,7 +18,7 @@ Applying a sentiment analysis to the database, we will rank adjectives according
 ### **Litterature review**
 <br>
 
-*what we need to speak about : what is NLP, GPT3, overview of biases of GPT3 proved by litterature, sentiment analysis and polarity (use for which puropose, why it is useful to stuty biases)etc...*
+*what we need to speak about : what is NLP, GPT3, overview of biases of GPT3 proved by litterature, sentiment analysis and polarity (use for which puropose, why it is useful to stuty biases)etc..*
 
 ### **Methodology**
 
