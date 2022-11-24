@@ -1,4 +1,4 @@
-# **General**
+# **Decoding Biases in the GPT-3 Language Model**
 
 👨‍💻 Final project in "Decoding Biases in Artificial Intelligence" course - Sciences Po Paris, Master in Digital & New Technology <br>
 🙋‍♀️ Aissatou Keita, Anna Soulier, Luisa Veronica Arroyo Revatta and Marine Dupuis   <br>
@@ -11,16 +11,16 @@
 - sentiment analysis.csv : database of words studied
 - Openai.ipynb : notebook for the sentiment analysis of the database of words, and the use of the GPT-3 API
 
-# **Decoding Biases in the GPT-3 Language Model**
-<br>
-To what extend GPT-3 trained models reflect biased patterns ?
-<br>
 <br>
 !! things to do this week (starting Monday 21): write litterature review and complete the bibliography accordingly (Aissatou), find a way to rank adjectives (positive or negative) according to their similairy score with chosen inputs (Veronica), try some other comparaisons (testing for racist, ableist biases) example using words embeddings and add the new results in the part results  (everyone), try to do some data visualisation (Anna) >> some articles to help you if needed on data visualisation https://openai.com/blog/introducing-text-and-code-embeddings/; https://www.kdnuggets.com/2018/08/emotion-sentiment-analysis-practitioners-guide-nlp-5.html
 
 things to do next week (starting Monday 28) : writing the conclusion + preparing for the oral presentation (selecting what we mention orally + presentation material)
 
 ### **Introduction**
+<br>
+
+*To what extend GPT-3 trained models reflect biased patterns?*
+
 <br>
 GPT-3 (Generative Pre-trained Transformer 3) is a language model, created by the OpenAI company in 2020. To understand what a language model is, one must first know the scientific field to which this concept belongs : natural language processing (NLP). At the confluence of artificial intelligence and linguistics, it aims to process linguistic elements using computer tools (Powers & Turk, 1989).
 
@@ -61,7 +61,7 @@ We observe an overrepresentation of neutral adjectives, while the number of nega
 
 ![image](https://user-images.githubusercontent.com/74886618/202904774-e20fb335-32f1-4fb3-ba70-218e01c2a51a.png)
 
-*GPT-3 embeddings and calculation of semantic proximity*
+*Second step : GPT-3 embeddings and calculation of semantic proximity*
 
 Providing embeddings for the word "dizzy", "man", "woman", we will see which word is closer to the other in vector space, and is therefore considered semantically closer by GPT-3.
 
