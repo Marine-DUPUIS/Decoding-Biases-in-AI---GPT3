@@ -3,15 +3,20 @@
 👨‍💻 Final project in "Decoding Biases in Artificial Intelligence" course - Sciences Po Paris, Master in Digital & New Technology <br>
 🙋‍♀️ Aissatou Keita, Anna Soulier, Luisa Veronica Arroyo Revatta and Marine Dupuis   <br>
 ⚡ Theme : GPT-3 and its biases  <br>
+
+Our final work can be consulted here : https://marine-dupuis.github.io/Decoding-Biases-in-AI---GPT3/
  <br>
 
-## **Overview of our documents**
-- READ.me : explanation of the project
-- Maintext.md : written analysis, final document
-- sentiment analysis.csv : database of words studied
-- Openai.ipynb : notebook for the sentiment analysis of the database of words, and the use of the GPT-3 API
-
+### **Summary**
 <br>
+
+* [Introduction](#introduction)
+* [Theory](#theory)
+* [Methodology](#methodology)
+* [Results](#results)
+* [Conclusion](#conclusion)
+* [References](#references)
+
 
 ### **Introduction**
 <br>
@@ -25,7 +30,7 @@ More precisely, the GPT-3 language model is based on pre-trained deep learning a
 
 Applying a sentiment analysis to the database, we will rank adjectives according to their type (neutral, positive or negative) via the NLP tool Vader. Using the GPT-3 language model API (Open AI) and focusing on word embeddings, this study is aiming try to see if words designating certains categories of people  are more associated than others to negative or positive adjectives. The results could further highlight the existence of several sexist, racist and abeist biases in the GPT-3 language model.
 
-### **Litterature review**
+### **Theory**
 <br>
 
 *what we need to speak about : what is NLP, GPT3, overview of biases of GPT3 proved by litterature, sentiment analysis and polarity (use for which puropose, why it is useful to stuty biases)etc...*
@@ -75,9 +80,8 @@ But it this also the case in the rest of the database? Are all positive adjectiv
 
 Men are more associated to positive adjectives than women, the similarity score is higher for men.
 
-It therefore seems that the GPT-3 language model is reflecting certain gender biases. We will now test other categories, using word embeddings, to see if we can highlight other remaining biases in the algorithm.
-
-### **Concluding remarks**
+It therefore seems that the GPT-3 language model is reflecting certain gender biases.
+### **Conclusion**
 <br>
 
 ### **References**
