@@ -12,9 +12,6 @@
 - Openai.ipynb : notebook for the sentiment analysis of the database of words, and the use of the GPT-3 API
 
 <br>
-- things to do this week (starting Monday 21): write litterature review and complete the bibliography accordingly (Aissatou), find a way to rank adjectives (positive or negative) according to their similairy score with chosen inputs (Veronica), try some other comparaisons (testing for racist, ableist biases) example using words embeddings and add the new results in the part results  (everyone), try to do some data visualisation (Anna) >> some articles to help you if needed on data visualisation https://openai.com/blog/introducing-text-and-code-embeddings/; https://www.kdnuggets.com/2018/08/emotion-sentiment-analysis-practitioners-guide-nlp-5.html
-
-- things to do next week (starting Monday 28) : writing the conclusion + preparing for the oral presentation (selecting what we mention orally + presentation material)
 
 ### **Introduction**
 <br>
