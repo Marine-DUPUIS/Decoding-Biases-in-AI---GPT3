@@ -128,13 +128,7 @@ The second word is "romantic" and we see that the score is high in the compariso
 
 The following word is "important", this word used as an adjectives shows that the person has great influence or authority (Oxford, 2022). For our surprise, this adjective is more close to "woman" than to "men", in that sense we find here. a case that doesn't follow the general results. The reason behind this could be the recent work to recognition the path and work of woman around the world. A simple clue to understand this result could be found in Google. If we type in the search engine the words "important woman" and "important man", we will get about 9,850,000,000 results for the first search and about 7,090,000,000 results for the second. This might tell us that there are more information that uses the word "important" and "woman". Nevertheless, the results are reversed if we search for the two words in quotes.
 
-The next adjective is "clever". 
-
-
-The last adjective is "intelligent"
-
-
-
+The next two adjectives are "clever" and "intelligent, both are synonyms. In both case, the adjective is more related to "woman" than to "man". Again, we see a different result from the general one. The only difference between the two is that results is closeness between "woman" and "intelligent" is bigger than for the word "clever". The explanation of these results might also rely in a current trend to vindicate women's cognitive abilities. As examples we can take the "Girls in ICT day" as a way to promote the inclusion of women in a careers traditionally meant for "intelligent" man, or the activism towards breaking the "glass ceiling" in the workplace that doesn't enable woman to achieve high hierarchy positions. (Adsoftheworld, 2018).
  
 What about the distances between each result? Let's see the next step. 
 
@@ -172,3 +166,4 @@ here = anna describe data visualisation results
 - Sumrak, J. (2020). What Is GPT-3: How It Works and Why You Should Care. *Twilio*. https://www.twilio.com/blog/what-is-gpt-3
 - The Guardian. (2020). A robot wrote this entire article. Are you scared yet, human?. https://www.theguardian.com/commentisfree/2020/sep/08/robot-wrote-this-article-gpt-3 
 - Quora (2020). Why there's a saying "No One can understand women? https://www.quora.com/Why-theres-a-saying-No-One-can-understand-women
+- Adsoftheworld (2018). Women vs. The Glass Ceiling. https://www.adsoftheworld.com/campaigns/women-vs-the-glass-ceiling
