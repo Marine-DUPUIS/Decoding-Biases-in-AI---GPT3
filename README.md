@@ -66,7 +66,11 @@ One of the hypotheses tested will be the following:<br>
 •	**Hypothesis** 0: Women are more associated with negative adjectives than men, men are more associated with positive adjectives.<br>
 •	**Hypothesis** 1: The gender has no influence on the association with positive or negative connation adjectives.
 
-If we do not manage to reject the null hypothesis, we can deduce that Open AI models are biased towards women: the training data of these algorithms associate more negative adjectives with women than with men. Other categories of people will be compared to specific adjectives of the database.
+If we do not manage to reject the null hypothesis, we can deduce that Open AI models are biased towards women: the training data of these algorithms associate more negative adjectives with women than with men.
+
+f) Then a qualitative analysis will be realised : we will rank the results obtained for given adjectives, to show which adjective are more related to men and women.   
+
+g) Finally, the last part will consist in a data visualisation of our results, to visually indicate the difference in terms of similarity scores between men and for women, for given adjectives.
 
 ### **Results**
 
@@ -75,9 +79,11 @@ If we do not manage to reject the null hypothesis, we can deduce that Open AI mo
 The studied adjectives are classified by a sentiment analysis tool, their polarity scores are then integrated into a new column of the databse. We then create sub-databases, bringing together all the adjectives classified as negative, positive, and neutral together.
 We observe an overrepresentation of neutral adjectives, while the number of negative and postive adjectives is quite similar.
 
-![image](https://user-images.githubusercontent.com/74886618/202903862-506e27dd-afaa-4673-9724-5b16b9c8eeb9.png)
+![image](https://user-images.githubusercontent.com/74886618/204872887-83663855-3e6a-4129-aca7-a9f65fe8b6dc.png)
 
-![image](https://user-images.githubusercontent.com/74886618/202904774-e20fb335-32f1-4fb3-ba70-218e01c2a51a.png)
+![image](https://user-images.githubusercontent.com/74886618/204873186-4b74a0b8-e765-47b4-9973-15b8035d3b22.png)
+
+![image](https://user-images.githubusercontent.com/74886618/204872982-64044051-d3ae-42c9-945f-1c07b3135ea2.png)
 
 *Second step : GPT-3 embeddings and calculation of semantic proximity*
 
@@ -86,31 +92,52 @@ Providing embeddings for the word "dizzy", "man", "woman", we will see which wor
 The first adjective of our dataset is "dizzy". It refers to the state of someone feeling unsteady or confused (Oxford, 2022). It has been classified as a negative word by the sentiment analysis tool VADER. We will now test the similarity between this adjective and these words : "man" and "woman".
  Text similarity models are used to "provide embeddings that capture the semantic similarity of pieces of text" (Open AI, 2022). For that, we will use one of the GPT-3 text similarity models called *Davinci*, for its performances and rapidity of calculation. 
 
-![image](https://user-images.githubusercontent.com/74886618/202904176-589ee054-18c6-424f-a481-bc28d1d4c5e6.png)
+![image](https://user-images.githubusercontent.com/74886618/204873414-46ee86f3-88a5-41b7-9b23-74c91de25e1b.png)
 
 The similarity score associated with the word "dizzy" is higher for "woman" compared to "man". Therefore, we can see that women are more associated than men with this negative word. We explained in the introduction that the GPT-3 language model is trained on several sources, with data scraped from sources like the BBC, NYT, Wikipedia, Reddit... To explain the results on the word "dizzy", we can suppose for that there are more occurrences in training dataset of the GPT-3 language model, of situations of women feeling dizzy compared to men. This seems quite consistent with the sigmate and common prejudice that women are fragile and weak compared to men (UN, 2014): this word must be more often, in a biased way, associated with women than with men on the Internet. Mimicking its training data, the GPT-3 model therefore indiciates a higher similarity between a woman and being "dizzy", compared to a man.
 
 But it this also the case in the rest of the database? Are all positive adjectives more associated with men than women? To answer this question, we will test the semantic proximity between the entire database of positive-ranked adjectives created earlier (called "count"), and two external inputs : "man" and "woman". The question is therefore the following: which word between "man" and "woman" is the closest semantically to all the positive classified adjectives in our database ?
 
-![image](https://user-images.githubusercontent.com/74886618/202904324-0a475b3d-d58e-42da-a27a-b82ca4fbad06.png)
+![image](https://user-images.githubusercontent.com/74886618/204873682-d188b989-2565-41d3-825a-24f1426ea7f3.png)
 
 Men are more associated to positive adjectives than women, the similarity score is higher for men.
 
 It therefore seems that the GPT-3 language model is reflecting certain gender biases.
 
+*Third step : qualitative analysis*
+
 here : ..... Vero
 
+*Fourth step : data visualisation*
+
+here = anna describe data visualisation results 
+
 ### **Conclusion**
-<br>
+
+<br>here = anna, overview 
 
 ### **References**
 <br> 
 
-- Al Amin, A. & Kabir, K. (2022). A Disability Lens towards Biases in GPT-3 Generated Open-Ended Languages, IJCAI 2022 Workshop on Diversity in Artificial Intelligence. https://arxiv.org/pdf/2206.11993 
-- Chiu, K. L., & Alexander, R. (2021). Detecting hate speech with gpt-3, University of Toronto. https://doi.org/10.48550/arXiv.2103.12407 
-- Dale, R (2021). GPT-3: What’s it good for? Natural Language Engineering, 27, 113–118, https://doi.org/10.1017/S1351324920000601 
-- Floridi, L., Chiriatti, M. (2020). GPT-3: Its Nature, Scope, Limits, and Consequences. Minds & Machines, 30, 681–694 . https://doi.org/10.1007/s11023-020-09548-1 
-- Lucy, L & Bamman, D. (2021). Gender and Representation Bias in GPT-3 Generated Stories, Proceedings of the 3rd Workshop on Narrative Understanding, 48–55. https://aclanthology.org/2021.nuse-1.5.pdf 
-- McGuffie, K., & Newhouse, A. (2020). The radicalization risks of GPT-3 and advanced neural language models, Cornell University.https://doi.org/10.48550/arXiv.2009.06807 
-- Min, Z. & Juntao, L. (2021), A commentary of GPT-3 in MIT Technology Review 2021, Fundamental Research, 1, 6,831-833, https://doi.org/10.1016/j.fmre.2021.11.011. 
-- Troske, A. et al (2022). Brilliance Bias in GPT-3, Santa Clara University. https://scholarcommons.scu.edu/cgi/viewcontent.cgi?article=1220&context=cseng_senior 
+*Academic articles and books*
+
+- Al Amin, A. & Kabir, K. (2022). A Disability Lens towards Biases in GPT-3 Generated Open-Ended Languages, *IJCAI 2022 Workshop on Diversity in Artificial Intelligence.* https://arxiv.org/pdf/2206.11993 
+- Chiu, K. L., & Alexander, R. (2021). Detecting hate speech with gpt-3, *University of Toronto*. https://doi.org/10.48550/arXiv.2103.12407 
+- Dale, R (2021). GPT-3: What’s it good for? *Natural Language Engineering*, 27, 113–118, https://doi.org/10.1017/S1351324920000601 
+- Elkins, K. & Chun, J. (2020). Can GPT-3 Pass a Writer’s Turing Test?. *Journal of Cultural Analytics*, 5. 10.22148/001c.17212. 
+- Floridi, L., Chiriatti, M. (2020). GPT-3: Its Nature, Scope, Limits, and Consequences. *Minds & Machines*, 30, 681–694 . https://doi.org/10.1007/s11023-020-09548-1 
+- Hutto, C., & Gilbert, E. (2014). VADER: A Parsimonious Rule-Based Model for Sentiment Analysis of Social Media Text. *Proceedings of the International AAAI Conference on Web and Social Media*, 8(1), 216-225. https://doi.org/10.1609/icwsm.v8i1.14550
+- Lucy, L & Bamman, D. (2021). Gender and Representation Bias in GPT-3 Generated Stories, *Proceedings of the 3rd Workshop on Narrative Understanding*, 48–55. https://aclanthology.org/2021.nuse-1.5.pdf 
+- McGuffie, K., & Newhouse, A. (2020). The radicalization risks of GPT-3 and advanced neural language models, *Cornell University*.https://doi.org/10.48550/arXiv.2009.06807 
+- Min, Z. & Juntao, L. (2021), A commentary of GPT-3 in MIT Technology Review 2021, *Fundamental Research*, 1(6),831-833, https://doi.org/10.1016/j.fmre.2021.11.011.
+- Open AI. (2022). Embeddings. https://beta.openai.com/docs/guides/embeddings/embeddings
+- Troske, A. et al (2022). Brilliance Bias in GPT-3, *Santa Clara University*. https://scholarcommons.scu.edu/cgi/viewcontent.cgi?article=1220&context=cseng_senior 
+
+*Press articles and websites*
+
+- Beri, A. (2020). SENTIMENTAL ANALYSIS USING VADER. https://towardsdatascience.com/sentimental-analysis-using-vader-a3415fef7664
+- IBM. (2020). Natural Language Processing (NLP). https://www.ibm.com/cloud/learn/natural-language-processing 
+- Oxford Dictionaries. (2022). https://www.oxfordlearnersdictionaries.com/us/definition/english/dizzy
+- Powers,D. & Turk, C. (1989). Machine Learning of Natural Language. *Springer-Verlag*.
+- Sumrak, J. (2020). What Is GPT-3: How It Works and Why You Should Care. *Twilio*. https://www.twilio.com/blog/what-is-gpt-3
+- The Guardian. (2020). A robot wrote this entire article. Are you scared yet, human?. https://www.theguardian.com/commentisfree/2020/sep/08/robot-wrote-this-article-gpt-3 
