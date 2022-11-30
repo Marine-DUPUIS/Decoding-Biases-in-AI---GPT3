@@ -106,7 +106,20 @@ It therefore seems that the GPT-3 language model is reflecting certain gender bi
 
 *Third step : qualitative analysis*
 
-here : ..... Vero
+in the last part we obtained the a general score of the similarity test between all the positive adjectives embeddings and the words woman and man. In this part, we want to take a deep look into five positive adjectives and see if men are also more associated to positive adjectives than woman. For this step, we choose five adjectives and create a specific dataframe called "nd".
+
+
+Then, we run a foorloop for each positive adjective and we save the result in a variable called "score_woman". Later we place the score values inside the dataframe we created before. 
+
+
+We repeat the same process with the word "man" and store the results of the text similarity analysis inside the dataframe. 
+
+As we want to analyse each word starting with the one that is more associated with the words "woman" and "men", we have to arrange the dataframe in descending order.
+
+
+As we can see here "solid" is the word that is highly associated to woman and man. However, as predicted before the closeness is higher with "man" than "woman". 
+
+What about the distances between each result? Let's see the next step. 
 
 *Fourth step : data visualisation*
 
