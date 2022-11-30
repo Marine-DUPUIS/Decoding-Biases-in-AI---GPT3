@@ -108,23 +108,23 @@ It therefore seems that the GPT-3 language model is reflecting certain gender bi
 
 in the last part we obtained the a general score of the similarity test between all the positive adjectives embeddings and the words woman and man. In this part, we want to take a deep look into five positive adjectives and see if men are also more associated to positive adjectives than woman. For this step, we choose five adjectives and create a specific dataframe called "nd".
 
-![image]
+![image](https://user-images.githubusercontent.com/74886618/204919761-0b110b84-431b-42a2-9681-e10d7ceaf22c.png)
 
 Then, we run a foorloop for each positive adjective and we save the result in a variable called "score_woman". Later we place the score values inside the dataframe we created before. 
 
-![image]
+![image](https://user-images.githubusercontent.com/74886618/204919846-b41487dc-e93e-407a-b7bd-bb01e1f3ac74.png)
 
 We repeat the same process with the word "man" and store the results of the text similarity analysis inside the dataframe. 
 
-![image]
+![image](https://user-images.githubusercontent.com/74886618/204919942-2352999f-c8d4-4553-9797-5147fd51f0d6.png)
 
 As we want to analyse each word starting with the one that is more associated with the words "woman" and "men", we have to arrange the dataframe in descending order.
 
-![image]
+![image](https://user-images.githubusercontent.com/74886618/204920011-d6736aca-41f7-4eac-a485-db17278e200e.png)
 
 As we can see here "solid" is the word that is highly associated to woman and man. However, as predicted before the closeness is higher with "man" than "woman". The adjective "solid" refers to how reliable is a person (Oxford, 2022). Therefore we can imagine that using GPT-3 there is a better chance to get results that describes a man as reliable than a woman. This clearly projects a old tradition of thinking about woman as a being that should not be trusted beacuse they cannot be understood or they can manipulate. There are lots of online material that still reflects this believe. (Quora, 2020)
 
-The second word is "romantic" and we see that the score is high in the comparison with "woman" than for "man". Even if this case does not follow the general results, it is no surprise in our current context that being romantic is still more linked to woman than man. This reflects a bias since "being romantic" is not about sex but about showing feelings of love (Oxford, 2022). 
+The second word is "romantic" and we see that the score is high in the comparison with "woman" than for "man". Even if this case does not follow the general results, it is no surprise in our current context that being romantic is still more linked to woman than man. This reflects a bias since "being romantic" is not about gender but about showing feelings of love (Oxford, 2022). 
 
 The following word is "important", this word used as an adjectives shows that the person has great influence or authority (Oxford, 2022). For our surprise, this adjective is more close to "woman" than to "men", in that sense we find here. a case that doesn't follow the general results. The reason behind this could be the recent work to recognition the path and work of woman around the world. A simple clue to understand this result could be found in Google. If we type in the search engine the words "important woman" and "important man", we will get about 9,850,000,000 results for the first search and about 7,090,000,000 results for the second. This might tell us that there are more information that uses the word "important" and "woman". Nevertheless, the results are reversed if we search for the two words in quotes.
 
@@ -135,8 +135,7 @@ The last adjective is "intelligent"
 
 
 
-(of people) showing feelings of love
-
+ 
 What about the distances between each result? Let's see the next step. 
 
 *Fourth step : data visualisation*
