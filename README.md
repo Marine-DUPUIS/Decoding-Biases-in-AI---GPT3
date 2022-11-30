@@ -112,15 +112,15 @@ in the last part we obtained the a general score of the similarity test between 
 
 Then, we run a foorloop for each positive adjective and we save the result in a variable called "score_woman". Later we place the score values inside the dataframe we created before. 
 
-![image](https://user-images.githubusercontent.com/74886618/204919846-b41487dc-e93e-407a-b7bd-bb01e1f3ac74.png)
+![image](https://github.com/veroluiza/pic/blob/6a0bd4c0c6a7e38cd8117975e6470aee51ae17bb/Score%20woman%20process.png)
 
 We repeat the same process with the word "man" and store the results of the text similarity analysis inside the dataframe. 
 
-![image](https://user-images.githubusercontent.com/74886618/204919942-2352999f-c8d4-4553-9797-5147fd51f0d6.png)
+![image](https://github.com/veroluiza/pic/blob/6a0bd4c0c6a7e38cd8117975e6470aee51ae17bb/Score%20man.png)
 
-As we want to analyse each word starting with the one that is more associated with the words "woman" and "men", we have to arrange the dataframe in descending order.
+As we want to analyse each word starting with the one that is more associated with the words "woman" and "man", we have to arrange the dataframe in descending order.
 
-![image](https://user-images.githubusercontent.com/74886618/204920011-d6736aca-41f7-4eac-a485-db17278e200e.png)
+![image](https://github.com/veroluiza/pic/blob/6a0bd4c0c6a7e38cd8117975e6470aee51ae17bb/Score%20woman%20-%20man.png)
 
 As we can see here "solid" is the word that is highly associated to woman and man. However, as predicted before the closeness is higher with "man" than "woman". The adjective "solid" refers to how reliable is a person (Oxford, 2022). Therefore we can imagine that using GPT-3 there is a better chance to get results that describes a man as reliable than a woman. This clearly projects a old tradition of thinking about woman as a being that should not be trusted beacuse they cannot be understood or they can manipulate. There are lots of online material that still reflects this believe. (Quora, 2020)
 
@@ -161,7 +161,7 @@ here = anna describe data visualisation results
 
 - Beri, A. (2020). SENTIMENTAL ANALYSIS USING VADER. https://towardsdatascience.com/sentimental-analysis-using-vader-a3415fef7664
 - IBM. (2020). Natural Language Processing (NLP). https://www.ibm.com/cloud/learn/natural-language-processing 
-- Oxford Dictionaries. (2022). https://www.oxfordlearnersdictionaries.com/us/definition/english/dizzy
+- Oxford Dictionaries. (2022). https://www.oxfordlearnersdictionaries.com/us
 - Powers,D. & Turk, C. (1989). Machine Learning of Natural Language. *Springer-Verlag*.
 - Sumrak, J. (2020). What Is GPT-3: How It Works and Why You Should Care. *Twilio*. https://www.twilio.com/blog/what-is-gpt-3
 - The Guardian. (2020). A robot wrote this entire article. Are you scared yet, human?. https://www.theguardian.com/commentisfree/2020/sep/08/robot-wrote-this-article-gpt-3 
