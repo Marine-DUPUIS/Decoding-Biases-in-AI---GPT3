@@ -63,12 +63,12 @@ d) Open AI's GPT-3 offers word embeddings model, allowing to compare the similar
   
 e) We will therefore run several semantic comparisons between adjectives of the database and external inputs corresponding to specific categories of people. It will reveal the existence or not of biases in the database.
 One of the hypotheses tested will be the following:<br>
-•	**Hypothesis** 0: Women are more associated with negative adjectives than men, men are more associated with positive adjectives.<br>
+•	**Hypothesis** 0: Men are more associated with positive adjectives.<br>
 •	**Hypothesis** 1: The gender has no influence on the association with positive or negative connation adjectives.
 
 If we do not manage to reject the null hypothesis, we can deduce that Open AI models are biased towards women: the training data of these algorithms associate more negative adjectives with women than with men.
 
-f) Then a qualitative analysis will be realised : we will rank the results obtained for given adjectives, to show which adjective are more related to men and women.   
+f) Then a qualitative analysis will be realised: we will rank the results obtained for given adjectives. We want to check if we can find the same general results in a more detailed analysis. In other words, we will see if the hypothesis is still valid when we do a more detailed analysis.  
 
 g) Finally, the last part will consist in a data visualisation of our results, to visually indicate the difference in terms of similarity scores between men and for women, for given adjectives.
 
@@ -106,31 +106,31 @@ It therefore seems that the GPT-3 language model is reflecting certain gender bi
 
 *Third step : qualitative analysis*
 
-in the last part we obtained the a general score of the similarity test between all the positive adjectives embeddings and the words woman and man. In this part, we want to take a deep look into five positive adjectives and see if men are also more associated to positive adjectives than woman. For this step, we choose five adjectives and create a specific dataframe called "nd".
+In the last part, we obtained the general score of the similarity test between all the positive adjectives embeddings and the words woman and man. In this part, we want to take a deep look into five positive adjectives and see if men are also more associated with positive adjectives than "woman". For this step, we choose five adjectives and create a specific data frame called "nd".
 
 ![image](https://github.com/veroluiza/pic/blob/6a0bd4c0c6a7e38cd8117975e6470aee51ae17bb/Creating%20a%20dataframe%20of%205%20adjectives.png)
 
-Then, we run a foorloop for each positive adjective and we save the result in a variable called "score_woman". Later we place the score values inside the dataframe we created before. 
+Then, we run a for loop for each positive adjective, and we save the result in a variable called "score_woman". Later we place the score values inside the data frame we created before. 
 
 ![image](https://github.com/veroluiza/pic/blob/6a0bd4c0c6a7e38cd8117975e6470aee51ae17bb/Score%20woman%20process.png)
 
-We repeat the same process with the word "man" and store the results of the text similarity analysis inside the dataframe. 
+We repeat the same process with the word "man" and store the results of the text similarity analysis inside the data frame. 
 
 ![image](https://github.com/veroluiza/pic/blob/6a0bd4c0c6a7e38cd8117975e6470aee51ae17bb/Score%20man.png)
 
-As we want to analyse each word starting with the one that is more associated with the words "woman" and "man", we have to arrange the dataframe in descending order.
+As we want to analyze each word starting with the one that is more associated with the words "woman" and "man", we have to arrange the data frame in descending order.
 
 ![image](https://github.com/veroluiza/pic/blob/6a0bd4c0c6a7e38cd8117975e6470aee51ae17bb/Score%20woman%20-%20man.png)
 
-As we can see here "solid" is the word that is highly associated to woman and man. However, as predicted before the closeness is higher with "man" than "woman". The adjective "solid" refers to how reliable is a person (Oxford, 2022). Therefore we can imagine that using GPT-3 there is a better chance to get results that describes a man as reliable than a woman. This clearly projects a old tradition of thinking about woman as a being that should not be trusted beacuse they cannot be understood or they can manipulate. There are lots of online material that still reflects this believe. (Quora, 2020)
+As we can see here "solid" is a word that is highly associated with "woman" and "man". However, as predicted before the closeness is higher with "man" than with "woman". The adjective "solid" refers to how reliable is a person (Oxford, 2022). Therefore we can imagine that using GPT-3 there is a better chance to get results that describe a man as reliable than a woman. This clearly projects an old tradition of thinking about a woman as a being that should not be trusted because they cannot be understood or can manipulate. There is a lot of online material that still reflects this belief. (Quora, 2020)
 
-The second word is "romantic" and we see that the score is high in the comparison with "woman" than for "man". Even if this case does not follow the general results, it is no surprise in our current context that being romantic is still more linked to woman than man. This reflects a bias since "being romantic" is not about gender but about showing feelings of love (Oxford, 2022). 
+The second word is "romantic" and we see that the score is high in the comparison with "woman" than for "man". Even if this case does not follow the general results, it is no surprise in our current context that being romantic is still more linked to "woman" than "man". This reflects a bias since "being romantic" is not about gender but about showing feelings of love (Oxford, 2022). 
 
-The following word is "important", this word used as an adjectives shows that the person has great influence or authority (Oxford, 2022). For our surprise, this adjective is more close to "woman" than to "men", in that sense we find here. a case that doesn't follow the general results. The reason behind this could be the recent work to recognition the path and work of woman around the world. A simple clue to understand this result could be found in Google. If we type in the search engine the words "important woman" and "important man", we will get about 9,850,000,000 results for the first search and about 7,090,000,000 results for the second. This might tell us that there are more information that uses the word "important" and "woman". Nevertheless, the results are reversed if we search for the two words in quotes.
+The following word is "important", this word used as an adjective shows that the person has great influence or authority (Oxford, 2022). To our surprise, this adjective is more close to "woman" than to "men", in that sense we find it here. a case that doesn't follow the general results. The reason behind this could be the recent work to recognize the path and work of women around the world. A simple clue to understanding this result could be found in Google. If we type in the search engine the words "important woman" and "important man", we will get about 9,850,000,000 results for the first search and about 7,090,000,000 results for the second. This might tell us that there is more information that uses the word "important" and "woman". Nevertheless, the results are reversed if we search for the two words in quotes.
 
-The next two adjectives are "clever" and "intelligent, both are synonyms. In both case, the adjective is more related to "woman" than to "man". Again, we see a different result from the general one. The only difference between the two is that results is closeness between "woman" and "intelligent" is bigger than for the word "clever". The explanation of these results might also rely in a current trend to vindicate women's cognitive abilities. As examples we can take the "Girls in ICT day" as a way to promote the inclusion of women in a careers traditionally meant for "intelligent" man, or the activism towards breaking the "glass ceiling" in the workplace that doesn't enable woman to achieve high hierarchy positions. (Adsoftheworld, 2018).
+The next two adjectives are "clever" and "intelligent, both are synonyms. In both cases, the adjective is more related to "woman" than to "man". Again, we see a different result from the general one. The only difference between the two is that closeness between "woman" and "intelligent" is bigger than for the word "clever". The explanation of these results might also rely upon a current trend to vindicate women's cognitive abilities. As examples, we can take "Girls in ICT day" as a way to promote the inclusion of women in careers traditionally meant for "intelligent" men or the activism towards breaking the "glass ceiling" in the workplace that doesn't enable a woman to achieve high hierarchy positions. (Adsoftheworld, 2018).
  
-What about the distances between each result? Let's see the next step. 
+As a conclusion in this third step, we found that in a detailed analysis hypothesis 0 is still valid in only one of the words. However, this idea is not enough to choose hypothesis 1 as there are still differences between the results in the "woman" and "man" columns. In the next step, we will get a closer look into those differences in a visual way. 
 
 *Fourth step : data visualisation*
 
