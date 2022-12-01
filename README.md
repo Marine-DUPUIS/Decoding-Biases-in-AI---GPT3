@@ -105,7 +105,7 @@ It therefore seems that the GPT-3 language model is reflecting certain gender bi
 
 In the last part, we obtained the general score of the similarity test between all the positive adjectives embeddings and the words woman and man. In this part, we want to take a deep look into five positive adjectives and see if men are also more associated with positive adjectives than women. For this step, we choose five adjectives and create a specific data frame called "nd".
 
-![image](https://user-images.githubusercontent.com/74886618/204969873-474c7f43-885f-4433-9d63-d7dc619e5da5.png) 
+![image](https://user-images.githubusercontent.com/74886618/205116762-9757b793-faf1-42d3-b1fa-5d1faa0c57f8.png)
 
 Then, we run a for loop for each positive adjective, and we save the result in a variable called "score_woman". Later we place the score values inside the data frame we created before. 
 
