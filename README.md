@@ -59,12 +59,12 @@ c) A loop running on all the lines of the adjectives database will print, in dig
    
 d) Open AI's GPT-3 offers word embeddings model, allowing to compare the similarity of two words or sentences. Word embeddings correspond to representation of vectors of a certain distance between different words. The more two words are semantically close, the more their distance will be reduced in the vector space (Harris, 1954). We chose to use the Davinci engine for its performances and rapidity of calculation of similarity scores between different words. The similarity score corresponds to the product of the two vectors representing each word, also called the "dot product" (Open AI, 2022). The higher the similarity score between two entries (on a scale ranging from -1 to 1), the higher their semantic proximity. In other words, the closer they are, the higher the possibility that GPT-3 will use them together in their generation language model. 
   
-e) We will therefore run several semantic comparisons between adjectives of the database and external inputs corresponding to specific categories of people. It will reveal the existence or not of biases in the database.
+e) We will therefore run several semantic comparisons between adjectives of the database and external inputs corresponding to specific categories of people. It will reveal the existence or not of biases in the GTP-3 model.
 One of the hypotheses tested will be the following:<br>
 •	**Hypothesis 0** : Men are more associated with positive adjectives.<br>
 •	**Hypothesis 1** : The gender has no influence on the association with positive or negative connation adjectives.
 
-If we do not manage to reject the null hypothesis, we can deduce that Open AI models are biased towards women: the training data of these algorithms associate more negative adjectives with women than with men.
+If we do not manage to reject the null hypothesis, we can deduce that Open AI models are biased towards women: the training data of these algorithms associate more positive adjectives with men than with women.
 
 f) Then a qualitative analysis will be realised: we will rank the results obtained for given adjectives. We want to check if we can find the same general results in a more detailed analysis. In other words, we will see if the hypothesis is still valid when we do a more detailed analysis.  
 
