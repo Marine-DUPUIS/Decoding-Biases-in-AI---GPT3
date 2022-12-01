@@ -155,15 +155,15 @@ here = anna describe data visualisation results
 - McGuffie, K., & Newhouse, A. (2020). The radicalization risks of GPT-3 and advanced neural language models, *Cornell University*.https://doi.org/10.48550/arXiv.2009.06807 
 - Min, Z. & Juntao, L. (2021), A commentary of GPT-3 in MIT Technology Review 2021, *Fundamental Research*, 1(6),831-833, https://doi.org/10.1016/j.fmre.2021.11.011.
 - Open AI. (2022). Embeddings. https://beta.openai.com/docs/guides/embeddings/embeddings
+- Powers,D. & Turk, C. (1989). Machine Learning of Natural Language. *Springer-Verlag*.
 - Troske, A. et al (2022). Brilliance Bias in GPT-3, *Santa Clara University*. https://scholarcommons.scu.edu/cgi/viewcontent.cgi?article=1220&context=cseng_senior 
 
 *Press articles and websites*
 
+- Adsoftheworld (2018). Women vs. The Glass Ceiling. https://www.adsoftheworld.com/campaigns/women-vs-the-glass-ceiling
 - Beri, A. (2020). SENTIMENTAL ANALYSIS USING VADER. https://towardsdatascience.com/sentimental-analysis-using-vader-a3415fef7664
 - IBM. (2020). Natural Language Processing (NLP). https://www.ibm.com/cloud/learn/natural-language-processing 
 - Oxford Dictionaries. (2022). https://www.oxfordlearnersdictionaries.com/us
-- Powers,D. & Turk, C. (1989). Machine Learning of Natural Language. *Springer-Verlag*.
+- Quora (2020). Why there's a saying "No One can understand women? https://www.quora.com/Why-theres-a-saying-No-One-can-understand-women
 - Sumrak, J. (2020). What Is GPT-3: How It Works and Why You Should Care. *Twilio*. https://www.twilio.com/blog/what-is-gpt-3
 - The Guardian. (2020). A robot wrote this entire article. Are you scared yet, human?. https://www.theguardian.com/commentisfree/2020/sep/08/robot-wrote-this-article-gpt-3 
-- Quora (2020). Why there's a saying "No One can understand women? https://www.quora.com/Why-theres-a-saying-No-One-can-understand-women
-- Adsoftheworld (2018). Women vs. The Glass Ceiling. https://www.adsoftheworld.com/campaigns/women-vs-the-glass-ceiling
