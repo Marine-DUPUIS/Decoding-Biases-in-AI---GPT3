@@ -151,7 +151,7 @@ We created a variable called “nd_val”, that stored the “nd” dataframe in
 We then repeated the process for the Score for men, by creating a second variable called “nd_val2".
 
 <img width="352" alt="Capture d'écran_20221202_000334" src="https://user-images.githubusercontent.com/118388867/205177607-77caae0e-c805-4f2e-9887-cd0fa55b3dcf.png">
-<img width="278" alt="Capture d'écran_20221201_165016" src="https://user-images.githubusercontent.com/118388867/205104307-aa4bd0a2-3e9a-4ef7-91e6-919858f6446f.png">
+<img width="277" alt="Capture d'écran_20221202_002103" src="https://user-images.githubusercontent.com/118388867/205179946-5484119c-a4c1-4982-a330-083afe06eeb2.png">
 
 Finally, we put the two plots next to each other, in order to better visualise the differences between the evolution of the score for the word “woman”, and for the word “man”. 
 
