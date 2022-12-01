@@ -28,31 +28,29 @@ GPT-3 (Generative Pre-trained Transformer 3) is a language model, created by Ope
 
 More precisely, the GPT-3 language model is based on pre-trained deep learning algorithms, and is able to generate entire texts, which tone and writing style are meant to be very natural and realistic. GPT-3 can also predict the end of a text that has already been started, with an advanced understanding of its writing context. Its algorithms are trained unsupervised on massive databases of human-written content like the Wikipedia website. As a result, we assume that GPT-3 algorithms incorporate into their learning process several biases present on the Internet. For instance, in this study we will focus on several adjectives, their connotation, and the semantic meaning they have in GPT-3 language model.
 
-Applying a sentiment analysis to the database, we will rank adjectives according to their type (neutral, positive or negative) via the NLP tool Vader. Using the GPT-3 language model API (Open AI) and focusing on **similarity** of word embeddings, this study is aiming try to see if words designating certains categories of people ("women" and "men") are more associated than others to negative or positive adjectives. The results could further highlight the existence of several sexist biases in the GPT-3 language model.
+Applying a sentiment analysis to the database, we will rank adjectives according to their type (neutral, positive or negative) via the NLP tool Vader. Using the GPT-3 language model API (Open AI) and focusing on similarity of word embeddings, this study is aiming try to see if words designating certains categories of people ("women" and "men") are more associated than others to negative or positive adjectives. The results could further highlight the existence of several sexist biases in the GPT-3 language model.
 
 ### **Theory**
 <br>
 
 According to IBM (2020), Natural Language processing, or NLP, is a “branch of artificial intelligence or AI—concerned with giving computers the ability to understand text and spoken words in much the same way human beings can.” In other words, NLP breaks down spoken and written language inputs to help algorithms categorize them. Languages are complex, and even within one language, the meaning of a word can vary depending on the context and the tone of the speaker. NLP attempts to clarify these complexities by breaking down inputs and categorizing them. 
 
-The Generative Pre-trained Transformer 3, or GPT-3, is the third iteration of GPT. The previous version, GPT-2, was able to use the context of a sentence to predict the following word. OpenAI did not release it due to concerns about it being used to publish “malicious content” like fake-news.  On the other hand, GPT-3 “uses deep learning to produce human-like text”  and “can write parody and poems: can generate texts of up to 50,000 characters, with no supervision.” Despite its ability to produce text, GPT-3 still has limitations. Indeed, The Guardian (2020) released an article titled “A robot wrote this entire article. Are you scared yet, human?” Later on, they admitted that GPT-3 produced several texts and they selected parts that they wanted to show. Dale (2021) explains that the longer the output, the less coherent the content becomes. This becomes an issue when you ask the tool to produce a news story founded in truth.
+The Generative Pre-trained Transformer 3, or GPT-3, is the third iteration of GPT. The previous version, GPT-2, was able to use the context of a sentence to predict the following word. OpenAI did not release it due to concerns about it being used to publish “malicious content” like fake-news.  On the other hand, GPT-3 “uses deep learning to produce human-like text”  and “can write parody and poems: can generate texts of up to 50,000 characters, with no supervision" (Panchiota, 2021). Despite its ability to produce text, GPT-3 still has limitations. Indeed, The Guardian (2020) released an article titled “A robot wrote this entire article. Are you scared yet, human?” Later on, they admitted that GPT-3 produced several texts and they selected parts that they wanted to show. Dale (2021) explains that the longer the output, the less coherent the content becomes. This becomes an issue when you ask the tool to produce a news story founded in truth.
 
 Furthermore, GPT-3 still has not passed a Turing test, a test used to determine “whether machines can think.” In other words it attempts to determine whether machines are simply imitating the models they were trained on or whether they follow a logic similar to the way humans  use language to produce content. According to Elkins and Chun (2020), while a human’s writing skills tend to remain consistent, GPT-3’s output can strongly vary. As a result, the tool might be able to produce a short story, however it will not be able to keep a narrative throughout a long period of time. 
 
-Another limitation GPT-3 has, according to Dale, is the reproduction of biases. In our case, GPT-3 was trained on the common crawl dataset. Sumrak (2020) states that “the model’s output is dependent on its input: garbage in, garbage out.” The statement illustrates the fact that the algorithm can replicate the biases found in the data it was trained on. For example, Lucy & Bamman (2021) tested GPT-3 gender bias and found that short stories generated by GPT-3 tended to describe feminine characters through their beauty and masculine characters through their strength. And indeed,an article by Elkins and Chun (2020) indicates that the tool “mindlessly” reproduces the biases found in the model it was trained on.  
+Another limitation GPT-3 has, according to Dale (2021), is the reproduction of biases. In our case, GPT-3 was trained on the common crawl dataset. Sumrak (2020) states that “the model’s output is dependent on its input: garbage in, garbage out.” The statement illustrates the fact that the algorithm can replicate the biases found in the data it was trained on. For example, Lucy & Bamman (2021) tested GPT-3 gender bias and found that short stories generated by GPT-3 tended to describe feminine characters through their beauty and masculine characters through their strength. And indeed, an article by Elkins and Chun (2020) indicates that the tool “mindlessly” reproduces the biases found in the model it was trained on.  
 
 One attempt at correcting this is the use of sentiment analysis which would allow the machine to  determine the emotional tone of a message. Currently, this tool is usually trained using product reviews. It can then try to identify the sentiment behind a document, sentence or word before classifying it. The advantages of sentiment analysis are that they can allow businesses to have a better idea of consumer sentiment towards their brand. Many also see an opportunity in healthcare where sentiment analysis can be used to monitor social media and identify the effects of a medication that were not shown during the research and development process. However, since a lot of sentiment analysis models are trained in English they are still lacking in other languages. In addition, sentiment analysis is still not fully able to detect subtleties like sarcasm. 
 
- 
 ### **Methodology**
 
- a)  Timsit (2017) emphasizes that English is an example of sex-neutral language, compared to other languages like French. This applies to verbs, adjectives, and adverbs. Therefore, any adjective in English should be equally used when refering to a "man" or "woman" independently if they have a positive, negative or neutral tone. To know if that happens in GPT-3, we first need to work on the adjectives and then do a similarity text analysis. For the adjectives work, we will classify them to know whether they are positive, negative and neutral. Later, we will check if GPT-3 prefers to associate them with "woman" or "man". If GPT-3 deploys gender-neutral language the preference in both cases should be equal.
+ a)  Timsit (2017) emphasizes that English is an example of gender-neutral language, compared to other languages like French. This applies to verbs, adjectives, and adverbs. Therefore, any adjective in English should be equally used when refering to a "man" or "woman" independently if they have a positive, negative or neutral tone. To know if that happens in GPT-3, we first need to work on the adjectives and then do a similarity text analysis. For the adjectives work, we will classify them to know whether they are positive, negative and neutral. Later, we will check if GPT-3 prefers to associate them with "woman" or "man". If GPT-3 deploys gender-neutral language the preference in both cases should be equal.
  
   **Sentimental Analysis:**
    
 b) As part of the NLP field, sentiment analysis is used to determine if a word is positive, negative or neutral. Using VADER (Valence Aware Dictionary and Sentiment Reasoner), an English-language sentiment analysis tool, we will be studying a database of adjectives determined randomly (n=1133) via the website: www.randomlists.com.   
-  
-c) A loop running on all the lines of the **adjectives** database will print, in digital form, a polarity score corresponding to the classification of the adjective studied (positive, neutral or negative). Polarity refers to the overall feeling conveyed by a written element. As explained by Beri (2020), "VADER sentimental analysis relies on a dictionary that maps lexical features to emotion intensities known as sentiment scores".
+c) A loop running on all the lines of the adjectives database will print, in digital form, a polarity score corresponding to the classification of the adjective studied (positive, neutral or negative). Polarity refers to the overall feeling conveyed by a written element. As explained by Beri (2020), "VADER sentimental analysis relies on a dictionary that maps lexical features to emotion intensities known as sentiment scores".
   
   **Text similarity Analysis:**
    
@@ -63,8 +61,8 @@ d) Open AI's GPT-3 offers word embeddings model, allowing to compare the similar
   
 e) We will therefore run several semantic comparisons between adjectives of the database and external inputs corresponding to specific categories of people. It will reveal the existence or not of biases in the database.
 One of the hypotheses tested will be the following:<br>
-•	**Hypothesis** 0: Men are more associated with positive adjectives.<br>
-•	**Hypothesis** 1: The gender has no influence on the association with positive or negative connation adjectives.
+•	**Hypothesis 0** : Men are more associated with positive adjectives.<br>
+•	**Hypothesis 1** : The gender has no influence on the association with positive or negative connation adjectives.
 
 If we do not manage to reject the null hypothesis, we can deduce that Open AI models are biased towards women: the training data of these algorithms associate more negative adjectives with women than with men.
 
@@ -90,7 +88,6 @@ We observe an overrepresentation of neutral adjectives, while the number of nega
 Providing embeddings for the word "dizzy", "man", "woman", we will see which word is closer to the other in vector space, and is therefore considered semantically closer by GPT-3.
 
 The first adjective of our dataset is "dizzy". It refers to the state of someone feeling unsteady or confused (Oxford, 2022). It has been classified as a negative word by the sentiment analysis tool VADER. We will now test the similarity between this adjective and these words : "man" and "woman".
- Text similarity models are used to "provide embeddings that capture the semantic similarity of pieces of text" (Open AI, 2022). For that, we will use one of the GPT-3 text similarity models called *Davinci*, for its performances and rapidity of calculation. 
 
 ![image](https://user-images.githubusercontent.com/74886618/204873414-46ee86f3-88a5-41b7-9b23-74c91de25e1b.png)
 
@@ -106,7 +103,7 @@ It therefore seems that the GPT-3 language model is reflecting certain gender bi
 
 *Third step : qualitative analysis*
 
-In the last part, we obtained the general score of the similarity test between all the positive adjectives embeddings and the words woman and man. In this part, we want to take a deep look into five positive adjectives and see if men are also more associated with positive adjectives than "woman". For this step, we choose five adjectives and create a specific data frame called "nd".
+In the last part, we obtained the general score of the similarity test between all the positive adjectives embeddings and the words woman and man. In this part, we want to take a deep look into five positive adjectives and see if men are also more associated with positive adjectives than women. For this step, we choose five adjectives and create a specific data frame called "nd".
 
 ![image](https://user-images.githubusercontent.com/74886618/204969873-474c7f43-885f-4433-9d63-d7dc619e5da5.png) 
 
@@ -114,23 +111,23 @@ Then, we run a for loop for each positive adjective, and we save the result in a
 
 ![image](https://user-images.githubusercontent.com/74886618/204969939-39d5d391-994c-4f19-9141-10c22d2b3f66.png) 
 
-We repeat the same process with the word "man" and store the results of the text similarity analysis inside the data frame. 
+We repeat the same process with the word "man" and store the results of the text similarity analysis inside the dataframe. 
 
 ![image](https://user-images.githubusercontent.com/74886618/204969998-79ba6336-0b69-4d72-940a-e5ecdbed7ae2.png)
 
-As we want to analyze each word starting with the one that is more associated with the words "woman" and "man", we have to arrange the data frame in descending order.
+As we want to analyze each word starting with the one that is more associated with the words "woman" and "man", we have to arrange the dataframe in descending order.
 
 ![image](https://user-images.githubusercontent.com/74886618/204970125-6347ab9f-42d5-4fec-a20f-74f857e0be7b.png)
 
-As we can see here "solid" is a word that is highly associated with "woman" and "man". However, as predicted before the closeness is higher with "man" than with "woman". The adjective "solid" refers to how reliable is a person (Oxford, 2022). Therefore we can imagine that using GPT-3 there is a better chance to get results that describe a man as reliable than a woman. This clearly projects an old tradition of thinking about a woman as a being that should not be trusted because they cannot be understood or can manipulate. There is a lot of online material that still reflects this belief. (Quora, 2020)
+As we can see here "solid" is a word that is highly associated with "woman" and "man". However, as predicted before, the closeness is higher with "man" than with "woman". The adjective "solid" refers to how reliable is a person (Oxford, 2022). Therefore, we can imagine that using GPT-3, there is a better chance to get results that describe a man as more reliable than a woman. This clearly projects an old tradition of thinking about a woman as a being that should not be trusted because they cannot be understood or can manipulate. There is a lot of online material that still reflects this belief. (Quora, 2020)
 
-The second word is "romantic" and we see that the score is high in the comparison with "woman" than for "man". Even if this case does not follow the general results, it is no surprise in our current context that being romantic is still more linked to "woman" than "man". This reflects a bias since "being romantic" is not about gender but about showing feelings of love (Oxford, 2022). 
+The second word is "romantic" and we see that the score is higher in the comparison with "woman", compared to "man". Even if this case does not follow the general results, it is no surprise in our current context that being romantic is still more linked to "woman" than "man". This reflects a bias since "being romantic" is not about gender but about showing feelings of love (Oxford, 2022). 
 
-The following word is "important", this word used as an adjective shows that the person has great influence or authority (Oxford, 2022). To our surprise, this adjective is more close to "woman" than to "men", in that sense we find it here. a case that doesn't follow the general results. The reason behind this could be the recent work to recognize the path and work of women around the world. A simple clue to understanding this result could be found in Google. If we type in the search engine the words "important woman" and "important man", we will get about 9,850,000,000 results for the first search and about 7,090,000,000 results for the second. This might tell us that there is more information that uses the word "important" and "woman". Nevertheless, the results are reversed if we search for the two words in quotes.
+The following word is "important", this word used as an adjective shows that the person has great influence or authority (Oxford, 2022). To our surprise, this adjective is more close to "woman" than to "men". We find here a case that doesn't follow the general results (reminder : an higher score of similarity between positive adjectives and men). The reason behind this could be the recent work to recognize the path and work of women around the world. A simple clue to understanding this result could be found in Google. If we type in the search engine the words "important woman" and "important man", we will get about 9,850,000,000 results for the first search and about 7,090,000,000 results for the second. This might tell us that there is more information that uses the word "important" and "woman". Nevertheless, the results are reversed if we search for the two words in quotes.
 
-The next two adjectives are "clever" and "intelligent, both are synonyms. In both cases, the adjective is more related to "woman" than to "man". Again, we see a different result from the general one. The only difference between the two is that closeness between "woman" and "intelligent" is bigger than for the word "clever". The explanation of these results might also rely upon a current trend to vindicate women's cognitive abilities. As examples, we can take "Girls in ICT day" as a way to promote the inclusion of women in careers traditionally meant for "intelligent" men or the activism towards breaking the "glass ceiling" in the workplace that doesn't enable a woman to achieve high hierarchy positions. (Adsoftheworld, 2018).
+The next two adjectives are "clever" and "intelligent", both are synonyms. In both cases, the adjective is more related to "woman" than to "man". Again, we see a different result from the general one. The only difference between the two is that closeness between "woman" and "intelligent" is bigger than for the word "clever". The explanation of these results might also rely upon a current trend to vindicate women's cognitive abilities. As examples, we can take "Girls in ICT day" as a way to promote the inclusion of women in careers traditionally meant for "intelligent" men, or the activism towards breaking the "glass ceiling" in the workplace that does not enable a woman to achieve high hierarchy positions (Adsoftheworld, 2018).
  
-As a conclusion in this third step, we found that in a detailed analysis hypothesis 0 is still valid in only one of the words. However, this idea is not enough to choose hypothesis 1 as there are still differences between the results in the "woman" and "man" columns. In the next step, we will get a closer look into those differences in a visual way. 
+As a conclusion in this third step, we found that in a detailed analysis that our null hypothesis is valid on only one of the adjectives studied. However, this is not enough to reject it, as there are still differences between the results in the "woman" and "man" columns. In the next step, we will get a closer look into those differences in a visual way. 
 
 *Fourth step : data visualisation*
 
@@ -156,11 +153,11 @@ We then repeated the process for the Score for men, by creating a second variabl
 <img width="354" alt="Capture d'écran_20221201_165001" src="https://user-images.githubusercontent.com/118388867/205104101-7615ea3a-2c43-442a-9f2e-e0635395f94c.png">
 <img width="278" alt="Capture d'écran_20221201_165016" src="https://user-images.githubusercontent.com/118388867/205104307-aa4bd0a2-3e9a-4ef7-91e6-919858f6446f.png">
 
-Finally, we put the two plots next to each other, in order to better visualise the differences between the evolution of the score for the word “Woman”, and for the word “Man”. 
+Finally, we put the two plots next to each other, in order to better visualise the differences between the evolution of the score for the word “woman”, and for the word “man”. 
 
 <img width="390" alt="Capture d'écran_20221201_165027" src="https://user-images.githubusercontent.com/118388867/205104319-6b7a1d18-c950-47f1-8510-edd1633e6225.png">
 
-It has to be noted that the scale is not the same for both graphs : the y axis is between 0.8 and (almost) 0.82 for the score for women, while it is between 0.78 and 0.82 for the score for men. It means that the five adjectives are almost equally associated with the word “Woman”, while some adjectives are more closely associated with the word “Man” than others.
+It has to be noted that the scale is not the same for both graphs : the y axis is between 0.8 and (almost) 0.82 for the score for women, while it is between 0.78 and 0.82 for the score for men. It means that the five adjectives are almost equally associated with the word “woman”, while some adjectives are more closely associated with the word “man” than others.
 
 
 ### **Conclusion**
@@ -191,6 +188,7 @@ It has to be noted that the scale is not the same for both graphs : the y axis i
 - Beri, A. (2020). SENTIMENTAL ANALYSIS USING VADER. https://towardsdatascience.com/sentimental-analysis-using-vader-a3415fef7664
 - IBM. (2020). Natural Language Processing (NLP). https://www.ibm.com/cloud/learn/natural-language-processing 
 - Oxford Dictionaries. (2022). https://www.oxfordlearnersdictionaries.com/us
+- Panchotia, R. (2021). What Is GPT-3 And Why It is Revolutionizing Artificial Intelligence? Medium. https://medium.com/analytics-vidhya/what-is-gpt-3-and-why-it-is-revolutionizing-artificial-intelligence-44d8e17c7edf
 - Quora (2020). Why there's a saying "No One can understand women? https://www.quora.com/Why-theres-a-saying-No-One-can-understand-women
 - Sumrak, J. (2020). What Is GPT-3: How It Works and Why You Should Care. *Twilio*. https://www.twilio.com/blog/what-is-gpt-3
 - The Guardian. (2020). A robot wrote this entire article. Are you scared yet, human?. https://www.theguardian.com/commentisfree/2020/sep/08/robot-wrote-this-article-gpt-3 
