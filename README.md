@@ -108,19 +108,19 @@ It therefore seems that the GPT-3 language model is reflecting certain gender bi
 
 In the last part, we obtained the general score of the similarity test between all the positive adjectives embeddings and the words woman and man. In this part, we want to take a deep look into five positive adjectives and see if men are also more associated with positive adjectives than "woman". For this step, we choose five adjectives and create a specific data frame called "nd".
 
-![image](https://github.com/veroluiza/pic/blob/6a0bd4c0c6a7e38cd8117975e6470aee51ae17bb/Creating%20a%20dataframe%20of%205%20adjectives.png)
+![image](https://user-images.githubusercontent.com/74886618/204969873-474c7f43-885f-4433-9d63-d7dc619e5da5.png) 
 
 Then, we run a for loop for each positive adjective, and we save the result in a variable called "score_woman". Later we place the score values inside the data frame we created before. 
 
-![image](https://github.com/veroluiza/pic/blob/6a0bd4c0c6a7e38cd8117975e6470aee51ae17bb/Score%20woman%20process.png)
+![image](https://user-images.githubusercontent.com/74886618/204969939-39d5d391-994c-4f19-9141-10c22d2b3f66.png) 
 
 We repeat the same process with the word "man" and store the results of the text similarity analysis inside the data frame. 
 
-![image](https://github.com/veroluiza/pic/blob/6a0bd4c0c6a7e38cd8117975e6470aee51ae17bb/Score%20man.png)
+![image](https://user-images.githubusercontent.com/74886618/204969998-79ba6336-0b69-4d72-940a-e5ecdbed7ae2.png)
 
 As we want to analyze each word starting with the one that is more associated with the words "woman" and "man", we have to arrange the data frame in descending order.
 
-![image](https://github.com/veroluiza/pic/blob/6a0bd4c0c6a7e38cd8117975e6470aee51ae17bb/Score%20woman%20-%20man.png)
+![image](https://user-images.githubusercontent.com/74886618/204970125-6347ab9f-42d5-4fec-a20f-74f857e0be7b.png)
 
 As we can see here "solid" is a word that is highly associated with "woman" and "man". However, as predicted before the closeness is higher with "man" than with "woman". The adjective "solid" refers to how reliable is a person (Oxford, 2022). Therefore we can imagine that using GPT-3 there is a better chance to get results that describe a man as reliable than a woman. This clearly projects an old tradition of thinking about a woman as a being that should not be trusted because they cannot be understood or can manipulate. There is a lot of online material that still reflects this belief. (Quora, 2020)
 
