@@ -134,7 +134,32 @@ As a conclusion in this third step, we found that in a detailed analysis hypothe
 
 *Fourth step : data visualisation*
 
-here = anna describe data visualisation results 
+To conclude our work, we used matplotlib to create some graphs in order to better visualise our data. 
+We first created a scatter plot, representing by each point the similarity score with the words “woman” and “man” for each adjective. By adding the two scatter plots in one graph, we can see the gap between the similarity scores.
+The similarity score for women is in red, and in blue for men.
+
+<img width="570" alt="Capture d'écran_20221201_163710" src="https://user-images.githubusercontent.com/118388867/205103454-4df3d22a-8f57-42c2-8277-8ef2a1a40c64.png">
+
+
+The two following graphs are used to better visualise the score for each adjective, with the label close to the point. 
+
+Image
+
+We wanted to get plots with a curve to see the augmentation of the similarity score for adjectives. 
+We created a variable called “nd_val”, that stored the “nd” dataframe in ascending order for the Score for women. This allowed us to visualise the data with a curve. 
+
+Image
+
+We then repeated the process for the Score for men, by creating a second variable called “nd_val2)
+
+Image
+
+Finally, we put the two plots next to each other, in order to better visualise the differences between the evolution of the score for the word “Woman”, and for the word “Man”. 
+
+Image
+
+It has to be noted that the scale is not the same for both graphs : the y axis is between 0.8 and (almost) 0.82 for the score for women, while it is between 0.78 and 0.82 for the score for men. It means that the five adjectives are almost equally associated with the word “Woman”, while some adjectives are more closely associated with the word “Man” than others.
+
 
 ### **Conclusion**
 
