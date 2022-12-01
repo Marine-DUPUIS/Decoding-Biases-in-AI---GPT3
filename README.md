@@ -140,9 +140,9 @@ The similarity score for women is in red, and in blue for men.
 
 <img width="570" alt="Capture d'écran_20221201_163710" src="https://user-images.githubusercontent.com/118388867/205103454-4df3d22a-8f57-42c2-8277-8ef2a1a40c64.png">
 
+The two following graphs are used to better visualise the score for each adjective, with the label close to the point. The dots in red represent the similarity score for women, while the dots in blue represent the similarity score for men
 
-The two following graphs are used to better visualise the score for each adjective, with the label close to the point. 
-
+<img width="316" alt="Capture d'écran_20221201_164849" src="https://user-images.githubusercontent.com/118388867/205104632-897e6dfb-d202-484c-8e8d-9ed05862817f.png">
 <img width="296" alt="Capture d'écran_20221201_164902" src="https://user-images.githubusercontent.com/118388867/205103960-af7004b5-529b-42cd-82e9-fd7cf233fa8c.png">
 
 We wanted to get plots with a curve to see the augmentation of the similarity score for adjectives. 
