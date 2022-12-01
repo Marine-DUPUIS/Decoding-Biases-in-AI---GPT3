@@ -143,20 +143,22 @@ The similarity score for women is in red, and in blue for men.
 
 The two following graphs are used to better visualise the score for each adjective, with the label close to the point. 
 
-Image
+<img width="296" alt="Capture d'écran_20221201_164902" src="https://user-images.githubusercontent.com/118388867/205103960-af7004b5-529b-42cd-82e9-fd7cf233fa8c.png">
 
 We wanted to get plots with a curve to see the augmentation of the similarity score for adjectives. 
 We created a variable called “nd_val”, that stored the “nd” dataframe in ascending order for the Score for women. This allowed us to visualise the data with a curve. 
 
-Image
+<img width="412" alt="Capture d'écran_20221201_164925" src="https://user-images.githubusercontent.com/118388867/205104005-27b88c8d-bf70-4365-911c-d43e8fb70821.png">
+<img width="296" alt="Capture d'écran_20221201_164946" src="https://user-images.githubusercontent.com/118388867/205104165-98cdd1aa-0da2-4f1b-b336-9455f66a2927.png">
 
-We then repeated the process for the Score for men, by creating a second variable called “nd_val2)
+We then repeated the process for the Score for men, by creating a second variable called “nd_val2"
 
-Image
+<img width="354" alt="Capture d'écran_20221201_165001" src="https://user-images.githubusercontent.com/118388867/205104101-7615ea3a-2c43-442a-9f2e-e0635395f94c.png">
+<img width="278" alt="Capture d'écran_20221201_165016" src="https://user-images.githubusercontent.com/118388867/205104307-aa4bd0a2-3e9a-4ef7-91e6-919858f6446f.png">
 
 Finally, we put the two plots next to each other, in order to better visualise the differences between the evolution of the score for the word “Woman”, and for the word “Man”. 
 
-Image
+<img width="390" alt="Capture d'écran_20221201_165027" src="https://user-images.githubusercontent.com/118388867/205104319-6b7a1d18-c950-47f1-8510-edd1633e6225.png">
 
 It has to be noted that the scale is not the same for both graphs : the y axis is between 0.8 and (almost) 0.82 for the score for women, while it is between 0.78 and 0.82 for the score for men. It means that the five adjectives are almost equally associated with the word “Woman”, while some adjectives are more closely associated with the word “Man” than others.
 
