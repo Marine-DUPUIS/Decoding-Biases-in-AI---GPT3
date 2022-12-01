@@ -74,8 +74,8 @@ g) Finally, the last part will consist in a data visualisation of our results, t
 
 *First step : the sentiment analysis*
 
-The studied adjectives are classified by a sentiment analysis tool, their polarity scores are then integrated into a new column of the databse. We then create sub-databases, bringing together all the adjectives classified as negative, positive, and neutral together.
-We observe an overrepresentation of neutral adjectives, while the number of negative and postive adjectives is quite similar.
+The studied adjectives are classified by a sentiment analysis tool, their polarity scores are then integrated into a new column of the database. We then create sub-databases, bringing together all the adjectives classified as negative, positive, and neutral together.
+We observe an overrepresentation of neutral adjectives, while the number of negative and positive adjectives is quite similar.
 
 ![image](https://user-images.githubusercontent.com/74886618/204872887-83663855-3e6a-4129-aca7-a9f65fe8b6dc.png)
 
@@ -135,9 +135,9 @@ To conclude our work, we used matplotlib to create some graphs in order to bette
 We first created a scatter plot, representing by each point the similarity score with the words “woman” and “man” for each adjective. By adding the two scatter plots in one graph, we can see the gap between the similarity scores.
 The similarity score for women is in red, and in blue for men.
 
-<img width="570" alt="Capture d'écran_20221201_163710" src="https://user-images.githubusercontent.com/118388867/205103454-4df3d22a-8f57-42c2-8277-8ef2a1a40c64.png">
+<img width="531" alt="Capture d'écran_20221201_235811" src="https://user-images.githubusercontent.com/118388867/205177287-87e1e7c4-726a-4b8a-9272-2cef58bf4c76.png">
 
-The two following graphs are used to better visualise the score for each adjective, with the label close to the point. The dots in red represent the similarity score for women, while the dots in blue represent the similarity score for men
+The two following graphs are used to better visualise the score for each adjective, with the label close to the point. The dots in red represent the similarity score for women, while the dots in blue represent the similarity score for men.
 
 <img width="316" alt="Capture d'écran_20221201_164849" src="https://user-images.githubusercontent.com/118388867/205104632-897e6dfb-d202-484c-8e8d-9ed05862817f.png">
 <img width="296" alt="Capture d'écran_20221201_164902" src="https://user-images.githubusercontent.com/118388867/205103960-af7004b5-529b-42cd-82e9-fd7cf233fa8c.png">
@@ -145,17 +145,17 @@ The two following graphs are used to better visualise the score for each adjecti
 We wanted to get plots with a curve to see the augmentation of the similarity score for adjectives. 
 We created a variable called “nd_val”, that stored the “nd” dataframe in ascending order for the Score for women. This allowed us to visualise the data with a curve. 
 
-<img width="412" alt="Capture d'écran_20221201_164925" src="https://user-images.githubusercontent.com/118388867/205104005-27b88c8d-bf70-4365-911c-d43e8fb70821.png">
+<img width="414" alt="Capture d'écran_20221202_000319" src="https://user-images.githubusercontent.com/118388867/205177590-8579a8a5-f959-4f3b-b7d9-6b331c5de6d9.png">
 <img width="296" alt="Capture d'écran_20221201_164946" src="https://user-images.githubusercontent.com/118388867/205104165-98cdd1aa-0da2-4f1b-b336-9455f66a2927.png">
 
-We then repeated the process for the Score for men, by creating a second variable called “nd_val2"
+We then repeated the process for the Score for men, by creating a second variable called “nd_val2".
 
-<img width="354" alt="Capture d'écran_20221201_165001" src="https://user-images.githubusercontent.com/118388867/205104101-7615ea3a-2c43-442a-9f2e-e0635395f94c.png">
+<img width="352" alt="Capture d'écran_20221202_000334" src="https://user-images.githubusercontent.com/118388867/205177607-77caae0e-c805-4f2e-9887-cd0fa55b3dcf.png">
 <img width="278" alt="Capture d'écran_20221201_165016" src="https://user-images.githubusercontent.com/118388867/205104307-aa4bd0a2-3e9a-4ef7-91e6-919858f6446f.png">
 
 Finally, we put the two plots next to each other, in order to better visualise the differences between the evolution of the score for the word “woman”, and for the word “man”. 
 
-<img width="390" alt="Capture d'écran_20221201_165027" src="https://user-images.githubusercontent.com/118388867/205104319-6b7a1d18-c950-47f1-8510-edd1633e6225.png">
+<img width="403" alt="Capture d'écran_20221201_235452" src="https://user-images.githubusercontent.com/118388867/205177697-db95d63d-9e20-424d-832a-fe60ccdf69e0.png">
 
 It has to be noted that the scale is not the same for both graphs : the y axis is between 0.8 and (almost) 0.82 for the score for women, while it is between 0.78 and 0.82 for the score for men. It means that the five adjectives are almost equally associated with the word “woman”, while some adjectives are more closely associated with the word “man” than others.
 
