@@ -1,11 +1,11 @@
 # **Decoding Biases in the GPT-3 Language Model**
+![image](https://user-images.githubusercontent.com/74886618/205187167-515d8b2d-ee4b-4d4c-87a3-7b703ebf5174.png)
 
 👨‍💻 Final project in "Decoding Biases in Artificial Intelligence" course - Sciences Po Paris, Master in Digital & New Technology <br>
 🙋‍♀️ Aissatou Keita, Anna Soulier, Luisa Veronica Arroyo Revatta and Marine Dupuis   <br>
-⚡ Theme : GPT-3 and its biases  <br>
+⚡ Theme : Open AI GPT-3 and its biases  <br>
 
 Our final work can be consulted here : https://marine-dupuis.github.io/Decoding-Biases-in-AI---GPT3/
- <br>
 
 ### **Summary**
 <br>
@@ -16,7 +16,6 @@ Our final work can be consulted here : https://marine-dupuis.github.io/Decoding-
 * [Results](#results)
 * [Conclusion](#conclusion)
 * [References](#references)
-
 
 ### **Introduction**
 <br>
