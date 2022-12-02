@@ -3,7 +3,7 @@
 
 👨‍💻 Final project in "Decoding Biases in Artificial Intelligence" course - Sciences Po Paris, Master in Digital & New Technology <br>
 🙋‍♀️ Aissatou Keita, Anna Soulier, Luisa Veronica Arroyo Revatta and Marine Dupuis   <br>
-⚡ Theme : Open AI GPT-3 and its biases  <br>
+⚡ Theme : Open AI GPT-3 language model and its biases  <br>
 
 Our final work can be consulted here : https://marine-dupuis.github.io/Decoding-Biases-in-AI---GPT3/
 
