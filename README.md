@@ -8,7 +8,6 @@
 Our final work can be consulted here : https://marine-dupuis.github.io/Decoding-Biases-in-AI---GPT3/
 
 ### **Summary**
-<br>
 
 * [Introduction](#introduction)
 * [Theory](#theory)
