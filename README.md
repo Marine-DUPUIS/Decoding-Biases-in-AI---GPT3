@@ -46,7 +46,7 @@ One attempt at correcting this is the use of sentiment analysis which would allo
 
  a)  Timsit (2017) emphasizes that English is an example of gender-neutral language, compared to other languages like French. This applies to verbs, adjectives, and adverbs. Therefore, any adjective in English should be equally used when refering to a "man" or "woman" independently if they have a positive, negative or neutral tone. To know if that happens in GPT-3, we first need to work on the adjectives and then do a similarity text analysis. For the adjectives work, we will classify them to know whether they are positive, negative and neutral. Later, we will check if GPT-3 prefers to associate them with "woman" or "man". If GPT-3 deploys gender-neutral language the preference in both cases should be equal.
  
-  **Sentimental Analysis:**
+ **Sentiment Analysis:**
    
 b) As part of the NLP field, sentiment analysis is used to determine if a word is positive, negative or neutral. Using VADER (Valence Aware Dictionary and Sentiment Reasoner), an English-language sentiment analysis tool, we will be studying a database of adjectives determined randomly (n=1133) via the website: www.randomlists.com.   
 c) A loop running on all the lines of the adjectives database will print, in digital form, a polarity score corresponding to the classification of the adjective studied (positive, neutral or negative). Polarity refers to the overall feeling conveyed by a written element. As explained by Beri (2020), "VADER sentimental analysis relies on a dictionary that maps lexical features to emotion intensities known as sentiment scores". In more detail, the scoring of the words studied is calculated as follows :  "a compound score is computed by summing the valence scores (namely, the "pos", "neu", and "neg" scores, which are ratios for proportions of text that fall in each category) of each word in the lexicon, and then normalized to be between -1 (most extreme negative) and +1 (most extreme positive)" (Hutto & Gilbert, 2014). Afterwards, to determine the type (postive, negative or neutral) of the word, the following rule has been used :
@@ -54,7 +54,7 @@ c) A loop running on all the lines of the adjectives database will print, in dig
 - compound score = 0, word = neutral
 - compound score < 0, word = negative 
   
-  **Text similarity Analysis:**
+**Text similarity Analysis:**
    
 d) Open AI's GPT-3 offers word embeddings model, allowing to compare the similarity of two words or sentences. Word embeddings correspond to representation of vectors of a certain distance between different words. The more two words are semantically close, the more their distance will be reduced in the vector space (Harris, 1954). We chose to use the Davinci engine for its performances and rapidity of calculation of similarity scores between different words. The similarity score corresponds to the product of the two vectors representing each word, also called the "dot product" (Open AI, 2022). The higher the similarity score between two entries (on a scale ranging from -1 to 1), the higher their semantic proximity. In other words, the closer they are, the higher the possibility that GPT-3 will use them together in their generation language model. 
   
