@@ -111,7 +111,7 @@ Then, we run a for loop for each positive adjective, and we save the result in a
 
 We repeat the same process with the word "man" and store the results of the text similarity analysis inside the dataframe. 
 
-![image](https://user-images.githubusercontent.com/74886618/204969998-79ba6336-0b69-4d72-940a-e5ecdbed7ae2.png)
+![image](https://user-images.githubusercontent.com/74886618/205284812-f110ce7b-e098-4651-9472-9a76b3a49926.png)
 
 As we want to analyze each word starting with the one that is more associated with the words "woman" and "man", we have to arrange the dataframe in descending order.
 
